@@ -1,1 +1,140 @@
+<!doctype html>
+<html>
 
+<head>
+    <title>Australia in 2050</title>
+    <link rel="icon" href="img\shutterstock_1025960785-2560x1300.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Australia in 2050</a>
+        <ul>
+
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#section1" class="section-link" data-target="#section1">Challenges</a></li>
+            <li><a href="#section2" class="section-link" data-target="#section2">Future Planning</a></li>
+            <li><a href="#section3" class="section-link" data-target="#section3">Electric Vehicles</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img\stars.png" id="stars">
+        <img src="img\moon.png" id="moon">
+        <img src="img\mountains_behind.png" id="mountains_behind">
+        <h2 id="text">The Future of Australia</h2>
+        <a href="#section1" id="btn">Start</a>
+        <img src="img\mountains_front.png" id="mountains_front">
+    </section>
+
+    <section>
+
+        <div class="sec" id="section1">
+            <h2>Challenges</h2>
+            <p>In a changing world, there are several challenges a country such as Australia faces moving forward and
+                planning to combat these intergenerational challenges are necessary to move forward to the year 2050.
+                Climate change is one of the most significant challenges to Australia’s long-term economic
+                sustainability. Australia will be one of the countries hardest and fastest hit. Additionally, A growing
+                population will help manage pressures of the ageing population but will put pressure on our
+                infrastructure, services, and environment. <br><br> Population growth and an aging population are some
+                of the significant challenges that Australia faces as
+                move forward. Australia’s population will continue to grow over time but at slower rates than in the
+                past. A growing population will help manage pressures of the ageing population but will put pressure on
+                our infrastructure, services, and environment. This will require continued planning and investment ahead
+                of time. <br><br> Australia’s population is ageing. Between now and 2050 the number of: older people (65
+                to 84 years) are expected to more than double; very old people (85 and over) is expected to more than
+                quadruple, from 0.4 million people today to 1.8 million in 2050. In contrast, the number of children is
+                expected to increase by 45 per cent; prime age working people is expected to increase by 44 per cent.
+            </p>
+           <a href="#section2" id="btn">Next</a>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="sec" id="section2">
+            <h2>Future Planning</h2>
+
+            <p> Significant planning and action are required to meet the needs and tackle the challenges that will be
+                faced as a result of significant fiscal and environmental consequences of the past and future. The fiscal strategy will keep real
+                growth in spending to 2 per cent,
+                when the economy is growing
+                strongly, until the Budget returns
+                to surplus. It will bring structural
+                improvements to the Budget,
+                reducing the fiscal pressures
+                of ageing and escalating
+                health costs. 
+                <br><br>The
+                Government has already begun to take steps to address some of the fiscal challenges presented by an
+                ageing population and the locking in of permanent increases in spending over the past decade. Whenever
+                the economy is growing strongly, the Government’s fiscal strategy commits to limiting real growth in
+                spending to 2 per cent per annum until the budget returns to surplus and allowing tax receipts to
+                recover naturally as the economy strengthens. Implementation of the Government’s fiscal strategy will
+                reduce ongoing spending by around one percentage point of GDP from 2015-16 onwards.
+            </p>
+            <a href="#section3" id="btn">Next</a>
+
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="sec" id="section3">
+            <h2>Electric Vehicles</h2>
+
+            <p>While government modelling forecasts 90 per cent of vehicles will be electric by 2050, Electric vehicle only make up one percent of all vehicles on Australian roads says energy and environmental economist Dr Marjan Nazifi, a lecturer in the Department of Economics at the Macquarie Business School. He also states that “Currently, Australians have access to about 33 passenger EV models from 13 different car manufacturers, with the price ranging between $40,990 to $176,918,” says Nazifi. “There are now around 15 EV models in Australia priced under $65,000.
+                “Our findings suggest that a $10,000 reduction in the price of EVs could lead to a 17 per cent to 42 per cent increase in market share.”
+                 <br><br>
+                 Some of the significant challenges that are faced by the electric vehicle industry is of the significant issues with expansion need for infrastructure for charging stations and battery storage to produce and store clean energy which has been produced through wind, solar or many other clean methods. <br><br> However, what’s more important is what the governments policy plans for clean energy look like and their commitments to net-zero greenhouse gas emissions by 2050. In the former prime ministers modelling of the policies for climate change, transport only covered a small part of modelling with little to no technical goals set out. However, it is assumed by 2050, the proportion of electric vehicles will increase from the current 1% to 90% of registered vehicles in Australia. 
+            </p>
+            <a href="#" id="button">Top of Page</a>
+        </div>
+    </section>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+
+        })
+    </script>
+
+
+</body>
+<footer>
+    <div>
+        <div class="overlay"><span>Credits</span></div>
+        <p><small>Content based on the: <a
+                    href="https://treasury.gov.au/sites/default/files/2019-03/IGR_2010_Overview.pdf">Australia to 2050:
+                    Future Challenges</small></a></p>
+        <p><small>
+            Additionally: <a
+            href="https://theconversation.com/government-assumes-90-of-australias-new-car-sales-will-be-electric-by-2050-but-its-a-destination-without-a-route-171741">Government assumes 90% of Australia’s new car sales will be electric by 2050. But it’s a destination without a route</a>
+        </small></p>
+
+
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+    <div>
+</footer>
+
+</html>
